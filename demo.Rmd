@@ -8,7 +8,12 @@ library(tidyverse)
 ```
 
 ```{r}
-ggplot(mpg, aes(x = displ, y=cty, col = drv)) + 
+ggplot(mpg, aes(x = displ, y=cty, col = drv, shape = drv)) + 
   geom_point()
+```
+
+```{r}
+ggplot(mpg, aes(displ)) +
+  geom_histogram(bins = 7)
 ```
 
