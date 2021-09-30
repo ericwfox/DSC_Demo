@@ -1,0 +1,14 @@
+---
+title: "Demo"
+output: pdf_document
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+ggplot(mpg, aes(x = displ, y=cty, col = drv)) + 
+  geom_point()
+```
+
